@@ -1,0 +1,240 @@
+module main_tb ;
+reg [63:0]a ;
+reg [63:0]b ;
+wire [255:0]out ;
+wire ready ;
+reg start ;
+reg reset ; 
+//reg b ;
+reg clk ;
+initial
+    clk= 1'b0;
+    always begin
+        //reset
+        #1  clk=~clk;     
+    end
+main messi(start,reset,clk,a,b,out,ready);
+initial begin 
+    a=2 ; b = 3 ; reset = 0 ;start = 1 ; 
+    #1 start=0;
+    #1 
+    $display("ready=%d out=%d",ready,out );#5
+    a=2 ; b = 64; reset = 1 ;start = 1 ; 
+    #1 start=0;
+    #1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $display("ready=%d out=%d",ready,out );#1 
+    $finish() ;
+    end
+endmodule 
